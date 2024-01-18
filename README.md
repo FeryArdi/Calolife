@@ -42,3 +42,10 @@ After successful build, your application structure should look like this:
     └── theme                       - It contains app theme and decoration classes
     └── widgets                     - It contains all custom widget classes
 ```
+
+
+<img width="114" alt="Screenshot 2024-01-18 222929" src="https://github.com/FeryArdi/Calolife/assets/117923710/1c9852bd-0583-4987-9626-f1432f8a6887">
+<img width="119" alt="Screenshot 2024-01-18 222937" src="https://github.com/FeryArdi/Calolife/assets/117923710/a4e0bf72-0096-413f-8ad5-1c7a0132ce0e">
+<img width="111" alt="Screenshot 2024-01-18 222907" src="https://github.com/FeryArdi/Calolife/assets/117923710/eac3f201-84ee-40e9-83fc-4560c115a92e">
+<img width="108" alt="Screenshot 2024-01-18 222918" src="https://github.com/FeryArdi/Calolife/assets/117923710/30040e68-bb14-4f88-a200-1be2ed2d4624">
+
