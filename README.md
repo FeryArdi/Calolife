@@ -5,6 +5,8 @@
 - [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
 - [Check the UI of the entire app](#app-navigations)
 - [Application structure](#project-structure)
+- [Deskripsi Tim Wired Crafters.txt](https://github.com/FeryArdi/Calolife/files/13978469/Deskripsi.Tim.Wired.Crafters.txt)
+
 
 
 ### System requirements
