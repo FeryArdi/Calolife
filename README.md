@@ -2,7 +2,6 @@
 # CaloLife
 ### Table of contents
 - [System requirements](#system-requirements)
-- [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
 - [Check the UI of the entire app](#app-navigations)
 - [Application structure](#project-structure)
 - [Deskripsi Tim Wired Crafters.txt](https://github.com/FeryArdi/Calolife/files/13978675/Deskripsi.Tim.Wired.Crafters.txt)
@@ -14,11 +13,6 @@
 
 Dart SDK Version 2.18.0 or greater.
 Flutter SDK Version 3.3.0 or greater.
-
-### Figma design guidelines for better UI accuracy
-
-Read our guidelines to increase the accuracy of design-to-code conversion by optimizing Figma designs.
-https://docs.dhiwise.com/docs/Designguidelines/intro
 
 ### Check the UI of the entire app
 
