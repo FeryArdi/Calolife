@@ -1,0 +1,19 @@
+import 'package:fery_s_application2/core/app_export.dart';import 'package:fery_s_application2/presentation/akun_baru_berat_badan_kg_one_page/akun_baru_berat_badan_kg_one_page.dart';import 'package:fery_s_application2/presentation/akun_baru_berat_badan_lb_page/akun_baru_berat_badan_lb_page.dart';import 'package:fery_s_application2/widgets/app_bar/appbar_leading_image.dart';import 'package:fery_s_application2/widgets/app_bar/custom_app_bar.dart';import 'package:flutter/material.dart';import 'package:smooth_page_indicator/smooth_page_indicator.dart';class AkunBaruBeratBadanKgTabContainerScreen extends StatefulWidget {const AkunBaruBeratBadanKgTabContainerScreen({Key? key}) : super(key: key);
+
+@override AkunBaruBeratBadanKgTabContainerScreenState createState() =>  AkunBaruBeratBadanKgTabContainerScreenState();
+
+ }
+
+// ignore_for_file: must_be_immutable
+class AkunBaruBeratBadanKgTabContainerScreenState extends State<AkunBaruBeratBadanKgTabContainerScreen> with  TickerProviderStateMixin {late TabController tabviewController;
+
+@override void initState() { super.initState(); tabviewController = TabController(length: 3, vsync: this); } 
+@override Widget build(BuildContext context) { return SafeArea(child: Scaffold(backgroundColor: appTheme.whiteA700, appBar: _buildAppBar(context), body: SizedBox(width: double.maxFinite, child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [SizedBox(height: 19.v), Align(alignment: Alignment.center, child: RichText(text: TextSpan(children: [TextSpan(text: "How much do you ", style: CustomTextStyles.headlineSmallff000000_1), TextSpan(text: "weight?", style: CustomTextStyles.headlineSmallff000000)]), textAlign: TextAlign.left)), SizedBox(height: 43.v), CustomImageView(imagePath: ImageConstant.imgCuriosityPeopleRafiki, height: 202.adaptSize, width: 202.adaptSize, alignment: Alignment.center), SizedBox(height: 50.v), Align(alignment: Alignment.centerRight, child: Padding(padding: EdgeInsets.only(right: 98.h), child: Text("kg", style: CustomTextStyles.labelLargeBlack900))), SizedBox(height: 1.v), SizedBox(width: 245.h, child: Divider(color: appTheme.teal100, indent: 103.h)), SizedBox(height: 25.v), Container(height: 28.v, width: 201.h, margin: EdgeInsets.only(left: 74.h), child: TabBar(controller: tabviewController, labelPadding: EdgeInsets.zero, labelColor: appTheme.whiteA70001, labelStyle: TextStyle(fontSize: 12.fSize, fontFamily: 'Roboto Flex', fontWeight: FontWeight.w700), unselectedLabelColor: appTheme.black900, unselectedLabelStyle: TextStyle(fontSize: 12.fSize, fontFamily: 'Roboto Flex', fontWeight: FontWeight.w700), indicator: BoxDecoration(color: appTheme.teal100, borderRadius: BorderRadius.horizontal(left: Radius.circular(50.h)), border: Border.all(color: theme.colorScheme.onPrimaryContainer, width: 1.h)), tabs: [Tab(child: Text("kg")), Tab(child: Text("lb")), Tab(child: Text("st & lb"))])), _buildTabBarView(context)])))); } 
+/// Section Widget
+PreferredSizeWidget _buildAppBar(BuildContext context) { return CustomAppBar(leadingWidth: 39.h, leading: AppbarLeadingImage(imagePath: ImageConstant.imgArrowLeft, margin: EdgeInsets.only(left: 15.h, top: 11.v, bottom: 9.v), onTap: () {onTapArrowLeft(context);}), centerTitle: true, title: SizedBox(height: 8.v, child: AnimatedSmoothIndicator(activeIndex: 0, count: 4, effect: ScrollingDotsEffect(spacing: 5, activeDotColor: theme.colorScheme.primary, dotColor: theme.colorScheme.onPrimaryContainer, dotHeight: 8.v, dotWidth: 8.h)))); } 
+/// Section Widget
+Widget _buildTabBarView(BuildContext context) { return SizedBox(height: 341.v, child: TabBarView(controller: tabviewController, children: [AkunBaruBeratBadanKgOnePage(), AkunBaruBeratBadanLbPage(), AkunBaruBeratBadanLbPage()])); } 
+
+/// Navigates back to the previous screen.
+onTapArrowLeft(BuildContext context) { Navigator.pop(context); } 
+ }
